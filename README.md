@@ -25,8 +25,8 @@ E um padrão de design de arquitetura com principio desacoplamento das interface
 Aprendi a usar o principio da arquitetura MVVM,fortaleci alguns conceitos 
 
 
-Kotlin tem um recurso interesante que e conhecido em algumas lingaugens como expresao auto-invocadora</br>
-Principio seria iniciar algo sem precisar instanciar ou ser invocada,no exemplo usamos o init, todo escopo dentro do init e invocado assim que a classe e iniciada
+Kotlin tem um recurso interessante que e conhecido em algumas linguagens como expresso auto-invocadora</br>
+Principio seria iniciar algo sem precisar instanciar ou ser invocada, no exemplo usamos o init, todo escopo dentro do init e invocado assim que a classe e iniciada
 
 
 ```kotlin
@@ -36,10 +36,10 @@ Principio seria iniciar algo sem precisar instanciar ou ser invocada,no exemplo 
  
 ```
 
-Para instanciar uma classe no topo da aplicaao que precisa do contexto voce normalmente utliza lateinit e depois realmetne instancia ela,porque no ciclo do android
-context oso existe dentro do onCreate. Utilizando MVVM preicisamos instanciar diferente de outras classes que precisam de contexto. Fica evidente na insancia em 
+Para instanciar uma classe no topo da aplicação que precisa do contexto você normalmente utiliza  lateinit e depois realmente instancia ela, porque no ciclo do android
+contexto  só existe dentro do onCreate. Utilizando MVVM precisamos instanciar diferente de outras classes que precisam de contexto. Fica evidente na instancia em
 mainModel = ViewModelProvider </br>
-Outro ponto interesante e o metodo observe,eles sao responsaveis para atualizar os dados que sofrem alteracao nas view que abstrai esse metodo
+Outro ponto interessante e o método observe, eles são responsáveis para atualizar os dados que sofrem alteração nas view que abstrai esse método
 
 ```kotlin
    class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -66,10 +66,10 @@ Outro ponto interesante e o metodo observe,eles sao responsaveis para atualizar 
     }
   }  
 ```
-Ciclo de vida do Android esta logo abaixo, onCreate,onStart,onResume,onStop,onDestroy. MOtivo que nao conseguimos contexto quando instaciamos uma classe no topo da hirarquia
-e pelo motivo do ciclo de vida do android, inicia no onCreate. Quando deseja eliminar uma activy voce utiliza o metodo onDestroy,apos este metodo ser chamado,
-so consegue acessar novamente a view que foi destruido,limpando os storage do celular,porque metodo onDestroy  limpa na meoria a activy e nao so podera ser vista novamente so apos o metodo
-onCreate ser chamado. Se nao usar o metodo onDestroy,quando voce sai de uma activy e volta quem inicia aplciacao e o metodo onStart.
+Ciclo de vida do Android esta logo abaixo, onCreate,onStart,onResume,onStop,onDestroy. Motivo que não conseguimos contexto quando instanciamos uma classe no topo da hierarquia
+e pelo motivo do ciclo de vida do android, inicia no onCreate. Quando deseja eliminar uma activy  você utiliza o método onDestroy, apos este método ser chamado,
+SO consegue acessar novamente a view que foi destruído, limpando os storage do celular, porque método onDestroy  limpa na memória a activy e não só poderá ser vista novamente só apos o método
+onCreate ser chamado. Se não usar o método onDestroy, quando você sai de uma activy e volta quem inicia aplciacao e o metodo onStart.
 
 
 
@@ -77,17 +77,9 @@ onCreate ser chamado. Se nao usar o metodo onDestroy,quando voce sai de uma acti
 
 
 
-
-
-
-
-
- 
-
 # Feature
 
 - XML
 - Funcoes
 - Controle de fluxos
-- Shared Preferences
-- Navegacao
+- MVVM
