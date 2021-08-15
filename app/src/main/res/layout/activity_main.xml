@@ -11,7 +11,7 @@
         android:id="@+id/textWelcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_welcome"
+        android:text=""
         app:layout_constraintTop_toTopOf="parent"
         android:textAlignment="center"
         app:layout_constraintLeft_toRightOf="parent"
@@ -20,7 +20,7 @@
         />
 
     <EditText
-        android:id="@+id/textName"
+        android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_200"
