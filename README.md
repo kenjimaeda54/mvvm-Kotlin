@@ -71,12 +71,12 @@ e pelo motivo do ciclo de vida do android, inicia no onCreate. Quando deseja eli
 so consegue acessar novamente a view que foi destruido,limpando os storage do celular,porque metodo onDestroy  limpa na meoria a activy e nao so podera ser vista novamente so apos o metodo
 onCreate ser chamado. Se nao usar o metodo onDestroy,quando voce sai de uma activy e volta quem inicia aplciacao e o metodo onStart.
 
-```kotlin
-
-[ciclo de vida](https://developer.android.com/images/topic/libraries/architecture/viewmodel-lifecycle.png?hl=pt-br)
 
 
-```
+![ciclo de vida](https://developer.android.com/images/topic/libraries/architecture/viewmodel-lifecycle.png?hl=pt-br)
+
+
+
 
 
 
